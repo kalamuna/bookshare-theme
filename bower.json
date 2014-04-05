@@ -1,0 +1,35 @@
+{
+  "name": "bookshare",
+  "version": "0.0.0",
+  "authors": [
+    "Kalamuna LLC <info@kalamuna.com>"
+  ],
+  "description": "Kalatheme sub-theme for Bookshare.org",
+  "main": [
+    "dist/css/bookshare.min.css",
+    "dist/js/bookshare.min.js",
+    "dist/js/modernizr.bookshare.min.js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.1.1",
+    "bootstrap-accessibility-plugin": "git@github.com:paypal/bootstrap-accessibility-plugin.git",
+    "respondJS": "~1.4.2",
+    "fontawesome": "~4.0.3",
+    "bootstrap": "~3.1.1",
+    "modernizr": "~2.7.2",
+    "yepnope": "~1.5.4",
+    "html5-boilerplate": "~4.3.0",
+    "accessifyhtml5.js": "yatil/accessifyhtml5.js",
+    "a11y": "clrux/a11y",
+    "a11yfy": "~0.0.13"
+  }
+}
