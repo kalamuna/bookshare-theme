@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Bookshare.org Drupal theme from Kalatheme",
   "main": "gruntfile.js",
+  "browser": "dist/bookshare.pkg.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

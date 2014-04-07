@@ -1,8 +1,8 @@
 (($) ->
-  
+
   ###
-  Bookshare is the application module for the theme.
-  @param {object} options Constructor Options
+  # Bookshare is the application module for the theme.
+  # @param {object} options Constructor Options
   ###
   Bookshare = (options) ->
     options = options or {}
@@ -10,7 +10,7 @@
     @options = $.extend(DEFAULTS, options)
     return
 
-  
+
   # Fallback support for adding  dropdowns
   Bookshare::initDropdowns = ->
     dropdown = @options.dropdown
@@ -20,10 +20,7 @@
     @initDropdowns()
     return
 
-  bookshareApp = new Bookshare({})
-  $ ->
-    bookshareApp.run()
-    return
 
-  return
+
+  module.exports = Bookshare;
 ) jQuery

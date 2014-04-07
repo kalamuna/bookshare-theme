@@ -1,5 +1,6 @@
 # Avoid `console` errors in browsers that lack a console.
-(->
+
+console = ->
   method = undefined
   noop = ->
 
@@ -31,10 +32,8 @@
   console = (window.console = window.console or {})
   while length--
     method = methods[length]
-    
+
     # Only stub undefined methods.
     console[method] = noop  unless console[method]
-  return
-)()
 
-# Place any jQuery/helper plugins in here.
+module.exports = console

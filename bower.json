@@ -29,7 +29,7 @@
     "yepnope": "~1.5.4",
     "html5-boilerplate": "~4.3.0",
     "accessifyhtml5.js": "yatil/accessifyhtml5.js",
-    "a11y": "clrux/a11y",
+    "a11y": "kalamuna/a11y",
     "a11yfy": "~0.0.13"
   }
 }
