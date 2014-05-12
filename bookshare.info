@@ -1,0 +1,16 @@
+name = bookshare
+description = A Kalatheme sub theme powered by Twitter Bootstrap & Science.
+base theme = kalatheme
+core = 7.x
+
+regions[content] = Content
+
+settings[toggle_logo] = 0
+
+stylesheets[all][] = dist/css/bookshare.css
+
+scripts[] =  dist/js/bookshare.pkg.js
+
+settings[a11ytoolbar] = true
+
+settings[bootstrap_library] = "none"

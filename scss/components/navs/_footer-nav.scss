@@ -1,0 +1,6 @@
+.site-footer{
+  .menu{
+    @extend .nav;
+    @extend .nav-justified;
+  }
+}

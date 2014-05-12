@@ -1,0 +1,5 @@
+*:focus,
+a:focus,
+.btn-focus{
+  outline: $focus-width solid $focus-color;
+}
