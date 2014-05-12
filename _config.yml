@@ -10,7 +10,7 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-baseurl:          bookshare-theme
+baseurl:          /
 url:              http://kalamuna.github.io/bookshare-theme
 encoding:         UTF-8
 
