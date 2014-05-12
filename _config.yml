@@ -10,8 +10,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-baseurl:          /
-url:              http://kalamuna.github.com/bookshare_theme
+baseurl:          bookshare-theme
+url:              http://kalamuna.github.io/bookshare-theme
 encoding:         UTF-8
 
 # Custom vars
