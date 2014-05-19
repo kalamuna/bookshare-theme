@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/about/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/bookshare-masthead/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/browser-bugs/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/components/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/css/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/customize/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/getting-started/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/javascript/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://kalamuna.github.io/bookshare-theme/migration/</loc>
+    <lastmod>2014-05-19T12:54:00-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+</urlset>

@@ -2325,12 +2325,13 @@ var AccessifyHTML5 = function (defaults, more_fixes) {
   Bookshare is the application module for the theme.
   @param {object} options Constructor Options
    */
-  var Bookshare, bookshareApp;
+  var Bookshare;
   Bookshare = function(options) {
     var DEFAULTS;
     options = options || {};
     DEFAULTS = {
-      dropdown: "*[data-toggle=\"dropdown\"]"
+      dropdown: "*[data-toggle=\"dropdown\"]",
+      themePath: Drupal.settings.basePath + Drupal.settings.bookshare.themepath || 'sites/all/themes/bookshare'
     };
     this.options = $.extend(DEFAULTS, options);
   };
@@ -2342,7 +2343,7 @@ var AccessifyHTML5 = function (defaults, more_fixes) {
   Bookshare.prototype.runA11yToolbar = function() {
     var path;
     if (typeof a11yToolbar !== "undefined" && a11yToolbar !== null) {
-      path = Drupal.settings.basePath + Drupal.settings.bookshare.themepath;
+      path = this.options.themePath;
       path += '/dist/';
       return a11yToolbar({
         assets: path,
@@ -2351,12 +2352,30 @@ var AccessifyHTML5 = function (defaults, more_fixes) {
       });
     }
   };
+  Bookshare.prototype.polyfills = function() {
+    if (window.Modernizr) {
+      Modernizr.load({
+        test: Modernizr.flexbox,
+        nope: "" + this.options.themePath + "/dist/js/vendor/flexie.min.js"
+      });
+      Modernizr.load({
+        test: Modernizr.mq('only all'),
+        nope: "" + this.options.themePath + "/dist/js/vendor/respond.min.js"
+      });
+      return Modernizr.load({
+        test: Modernizr.input.placeholder,
+        nope: "" + this.options.themePath + "/ dist/js/vendor/placeholder_polyfill.jquery.min.combo.js"
+      });
+    }
+  };
   Bookshare.prototype.run = function() {
     this.initDropdowns();
-    return this.runA11yToolbar();
+    this.runA11yToolbar();
+    return this.polyfills();
   };
-  bookshareApp = new Bookshare({});
   return $(function() {
+    var bookshareApp;
+    bookshareApp = new Bookshare({});
     return bookshareApp.run();
   });
 })(jQuery);

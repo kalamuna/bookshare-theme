@@ -1,0 +1,73 @@
+.jumbotron-banner{
+  padding: $banner-padding;
+  order: 1;
+  font-size: $banner-font-size;
+  +*{
+    &,
+    img{
+
+      order: 2;
+      width: 100%;
+
+    }
+  }
+  p{
+    font-size: inherit;
+  }
+  @media (min-width: $screen-sm-min) {
+    font-size: ($banner-font-size*1.25);
+    &,
+    +*{
+      width: 50%;
+    }
+  }
+  @media (min-width: $screen-lg-min){
+    width: 75%;
+    font-size: ($banner-font-size*1.5);
+
+    +*{
+      width: 25%;
+    }
+
+  }
+
+}
+.jumbotron-banner{
+  padding: ($banner-padding/2);
+  background: none;
+  margin-bottom: 0;
+  border-radius: $banner-border-radius;
+}
+
+.banner{
+  figure{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-sm-min) {
+      flex-direction: row;
+    }
+  }
+  margin-bottom: $banner-margin-bottom;
+  h1{
+    font-size: $banner-heading-font-size;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@include banner-variation('.banner', $gray-darker);
+@include banner-variation('.banner-primary', $brand-primary);
+@include banner-variation('.banner-danger', $state-danger-bg);
+@include banner-variation('.banner-info', $state-info-bg);
+@include banner-variation('.banner-danger', $state-danger-bg);
+@include banner-variation('.banner-warning', $state-warning-bg);
+
+@include banner-variation('.banner-student-parent', $state-student-parent-bg);
+@include banner-variation('.banner-adult', $state-adult-bg);
+@include banner-variation('.banner-educator', $state-educator-bg);
+@include banner-variation('.banner-volunteer', $state-volunteer-bg);
+
+@include banner-variation('.banner-about', $state-about-bg);

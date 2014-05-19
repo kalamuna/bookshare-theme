@@ -1,6 +1,6 @@
 node_modules
 bower_components
 !bower_components/a11y
-.sass_cache
+.sass-cache
 reports
 _gh_pages

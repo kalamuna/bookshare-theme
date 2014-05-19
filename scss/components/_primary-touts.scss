@@ -1,11 +1,13 @@
-.pane-bundle-hot-primary-tout-third{
+.primary-tout{
   background-color: $primary-tout-default-bg;
   color: $primary-tout-default-color;
+  max-width: $primary-tout-max-width;
   .pane-title{
     display: table-cell;
     margin: 0 0 0 0;
     vertical-align: bottom;
     font-weight: bold;
+    color: $primary-tout-default-color;
   }
   header{
     display: table;
@@ -26,17 +28,18 @@
       }
     }
   }
-
 }
 
+@include bg-variant('.primary-tout-primary', $brand-primary);
+@include bg-variant('.primary-tout-info', $brand-info);
+@include bg-variant('.primary-tout-danger', $brand-danger);
+@include bg-variant('.primary-tout-success', $brand-success);
+@include bg-variant('.primary-tout-warning', $brand-warning);
 
 
-//DELETE ME LATER!!!!
-.pane-bundle-hot-primary-tout-third{
-  .omalley-column-content-region-2 &{
-    background-color: $brand-danger-b;
-  }
-  .omalley-column-content-region-3 &{
-    background-color: $brand-success-b;
-  }
-}
+@include bg-variant('.primary-tout-student-parent', $state-student-parent-bg);
+@include bg-variant('.primary-tout-adult', $state-adult-bg);
+@include bg-variant('.primary-tout-educator', $state-educator-bg);
+
+@include bg-variant('.primary-tout-volunteer', $state-volunteer-bg);
+@include bg-variant('.primary-tout-about', $state-about-bg);

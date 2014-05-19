@@ -31,5 +31,10 @@
     "accessifyhtml5.js": "yatil/accessifyhtml5.js",
     "a11y": "kalamuna/a11y",
     "a11yfy": "~0.0.13"
+  },
+  "dependencies": {
+    "flexie": "doctyper/flexie#~1.0.3",
+    "selectivizr": "~1.0.2",
+    "html5-placeholder-polyfill": "~2.0.10"
   }
 }

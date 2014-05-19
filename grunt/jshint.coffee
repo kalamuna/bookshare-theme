@@ -16,7 +16,8 @@ module.exports =
       jQuery: true
       require: true
       Drupal: true
-      modernizr: true
+      Modernizr: true
+      console: true
       a11yToolbar: true
   themeJS:
     src: "js/**/*.js"

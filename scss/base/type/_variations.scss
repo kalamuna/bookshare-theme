@@ -1,0 +1,28 @@
+
+@include text-emphasis-variant('.text-student-parent', $state-student-parent-text);
+
+@include text-emphasis-variant('.text-adult', $state-adult-text);
+
+@include text-emphasis-variant('.text-educator', $state-educator-text);
+
+@include text-emphasis-variant('.text-volunteer', $state-volunteer-text);
+
+@include text-emphasis-variant('.text-about', $state-about-text);
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+}
+@include bg-variant('.bg-student-parent', $state-student-parent-bg);
+
+@include bg-variant('.bg-adult', $state-adult-bg);
+
+@include bg-variant('.bg-educator', $state-educator-bg);
+
+@include bg-variant('.bg-volunteer', $state-volunteer-bg);
+
+@include bg-variant('.bg-about', $state-about-bg);

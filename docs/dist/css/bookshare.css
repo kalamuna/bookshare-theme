@@ -7356,6 +7356,94 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a,
   margin-top: 10px;
 }
 
+.text-student-parent {
+  color: #d71f26;
+}
+
+a.text-student-parent:hover {
+  color: #aa191e;
+}
+
+.text-adult {
+  color: #51b959;
+}
+
+a.text-adult:hover {
+  color: #3e9945;
+}
+
+.text-educator {
+  color: #13b9d5;
+}
+
+a.text-educator:hover {
+  color: #0f90a6;
+}
+
+.text-volunteer {
+  color: #be3d96;
+}
+
+a.text-volunteer:hover {
+  color: #973178;
+}
+
+.text-about {
+  color: #e5d8d3;
+}
+
+a.text-about:hover {
+  color: #d2bcb3;
+}
+
+.bg-primary {
+  color: #fff;
+}
+
+.bg-student-parent {
+  background-color: #d71f26;
+}
+
+a.bg-student-parent:hover {
+  background-color: #aa191e;
+}
+
+.bg-adult {
+  background-color: #119b48;
+}
+
+a.bg-adult:hover {
+  background-color: #0c6d33;
+}
+
+.bg-educator {
+  background-color: #0d6f9b;
+}
+
+a.bg-educator:hover {
+  background-color: #094d6c;
+}
+
+.bg-volunteer {
+  background-color: #972585;
+}
+
+a.bg-volunteer:hover {
+  background-color: #6e1b61;
+}
+
+.bg-about {
+  background-color: #4c4847;
+}
+
+a.bg-about:hover {
+  background-color: #322f2e;
+}
+
+#field-hot-table-add-more-wrapper > div > div.description {
+  display: none;
+}
+
 #page-wrapper {
   margin: 0 auto -60px;
 }
@@ -7397,37 +7485,243 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a,
   padding-left: 0;
 }
 
-.pane-bundle-hot-primary-tout-third {
+.primary-tout {
   background-color: #0a6f9b;
   color: white;
+  max-width: 263px;
 }
-.pane-bundle-hot-primary-tout-third .pane-title {
+.primary-tout .pane-title {
   display: table-cell;
   margin: 0 0 0 0;
   vertical-align: bottom;
   font-weight: bold;
+  color: white;
 }
-.pane-bundle-hot-primary-tout-third header {
+.primary-tout header {
   display: table;
   min-height: 88px;
   padding: 6px 12px;
   width: 100%;
 }
-.pane-bundle-hot-primary-tout-third header
-, .pane-bundle-hot-primary-tout-third header a {
+.primary-tout header
+, .primary-tout header a {
   color: white;
 }
-.pane-bundle-hot-primary-tout-third header a {
+.primary-tout header a {
   text-decoration: none;
 }
-.pane-bundle-hot-primary-tout-third header a:hover, .pane-bundle-hot-primary-tout-third header a:focus {
+.primary-tout header a:hover, .primary-tout header a:focus {
   text-decoration: underline;
   color: #999999;
 }
 
-.omalley-column-content-region-2 .pane-bundle-hot-primary-tout-third {
-  background-color: #9b0a0a;
+.primary-tout-primary {
+  background-color: #435e9d;
 }
-.omalley-column-content-region-3 .pane-bundle-hot-primary-tout-third {
-  background-color: #0a9b45;
+
+a.primary-tout-primary:hover {
+  background-color: #344979;
+}
+
+.primary-tout-info {
+  background-color: #5392d8;
+}
+
+a.primary-tout-info:hover {
+  background-color: #2e78ca;
+}
+
+.primary-tout-danger {
+  background-color: #d80f0f;
+}
+
+a.primary-tout-danger:hover {
+  background-color: #a80c0c;
+}
+
+.primary-tout-success {
+  background-color: #099e68;
+}
+
+a.primary-tout-success:hover {
+  background-color: #066e48;
+}
+
+.primary-tout-warning {
+  background-color: #e95b00;
+}
+
+a.primary-tout-warning:hover {
+  background-color: #b64700;
+}
+
+.primary-tout-student-parent {
+  background-color: #d71f26;
+}
+
+a.primary-tout-student-parent:hover {
+  background-color: #aa191e;
+}
+
+.primary-tout-adult {
+  background-color: #119b48;
+}
+
+a.primary-tout-adult:hover {
+  background-color: #0c6d33;
+}
+
+.primary-tout-educator {
+  background-color: #0d6f9b;
+}
+
+a.primary-tout-educator:hover {
+  background-color: #094d6c;
+}
+
+.primary-tout-volunteer {
+  background-color: #972585;
+}
+
+a.primary-tout-volunteer:hover {
+  background-color: #6e1b61;
+}
+
+.primary-tout-about {
+  background-color: #4c4847;
+}
+
+a.primary-tout-about:hover {
+  background-color: #322f2e;
+}
+
+.jumbotron-banner {
+  padding: 15px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  font-size: 150%;
+}
+.jumbotron-banner + *,
+.jumbotron-banner + * img {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  width: 100%;
+}
+.jumbotron-banner p {
+  font-size: inherit;
+}
+@media (min-width: 768px) {
+  .jumbotron-banner {
+    font-size: 187.5%;
+  }
+  .jumbotron-banner,
+  .jumbotron-banner + * {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .jumbotron-banner {
+    width: 75%;
+    font-size: 225%;
+  }
+  .jumbotron-banner + * {
+    width: 25%;
+  }
+}
+
+.jumbotron-banner {
+  padding: 7.5px;
+  background: none;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.banner {
+  margin-bottom: 30px;
+}
+.banner figure {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .banner figure {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+.banner h1 {
+  font-size: 150%;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  color: white;
+  background-color: #222222;
+}
+
+.banner-primary {
+  color: white;
+  background-color: #435e9d;
+}
+
+.banner-danger {
+  color: white;
+  background-color: #f2dede;
+}
+
+.banner-info {
+  color: white;
+  background-color: #d9edf7;
+}
+
+.banner-danger {
+  color: white;
+  background-color: #f2dede;
+}
+
+.banner-warning {
+  color: white;
+  background-color: #fcf8e3;
+}
+
+.banner-student-parent {
+  color: white;
+  background-color: #d71f26;
+}
+
+.banner-adult {
+  color: white;
+  background-color: #119b48;
+}
+
+.banner-educator {
+  color: white;
+  background-color: #0d6f9b;
+}
+
+.banner-volunteer {
+  color: white;
+  background-color: #972585;
+}
+
+.banner-about {
+  color: white;
+  background-color: #4c4847;
 }

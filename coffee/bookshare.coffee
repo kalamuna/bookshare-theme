@@ -7,7 +7,9 @@
   ###
   Bookshare = (options) ->
     options = options or {}
-    DEFAULTS = dropdown: "*[data-toggle=\"dropdown\"]"
+    DEFAULTS =
+      dropdown: "*[data-toggle=\"dropdown\"]"
+      themePath: Drupal.settings.basePath +  Drupal.settings.bookshare.themepath || 'sites/all/themes/bookshare'
     @options = $.extend(DEFAULTS, options)
     return
 
@@ -19,7 +21,7 @@
 
   Bookshare::runA11yToolbar = ->
     if a11yToolbar?
-      path = Drupal.settings.basePath +  Drupal.settings.bookshare.themepath
+      path = @options.themePath
       path += '/dist/'
       a11yToolbar(
         assets: path
@@ -34,13 +36,36 @@
         ]
       )
 
+  Bookshare::polyfills = ->
+    if(window.Modernizr)
+      Modernizr.load(
+        test: Modernizr.flexbox
+        nope:
+          "#{@options.themePath}/dist/js/vendor/flexie.min.js"
+      )
+      Modernizr.load(
+        test: Modernizr.mq('only all')
+        nope:
+          "#{@options.themePath}/dist/js/vendor/respond.min.js"
+      )
+      Modernizr.load(
+        test: Modernizr.input.placeholder
+        nope:
+          "#{@options.themePath}/
+          dist/js/vendor/placeholder_polyfill.jquery.min.combo.js"
+      )
+
+
+
+
   Bookshare::run = ->
     @initDropdowns()
     @runA11yToolbar()
+    @polyfills()
 
 
-  bookshareApp = new Bookshare({})
   $ ->
+    bookshareApp = new Bookshare({})
     bookshareApp.run()
 
 

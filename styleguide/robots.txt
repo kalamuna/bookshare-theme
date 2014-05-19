@@ -1,0 +1,6 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow:
+Sitemap: http://kalamuna.github.io/bookshare-theme/sitemap.xml

@@ -30,3 +30,6 @@ module.exports =
     files: "dist/**/*"
     options:
       livereload: true
+  styleguide:
+    files: 'docs/**/*'
+    tasks: 'jekyll:styleguide'

@@ -4,4 +4,5 @@ module.exports =
       "uglify:themeJS"
       "modernizr"
       "compass:dist"
+      "copy:bower"
     ]

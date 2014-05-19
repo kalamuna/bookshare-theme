@@ -4,10 +4,8 @@ module.exports =
     config: '_config.yml'
   styleguide:
     options:
-      config: '_config.yml'
-      baseurl: ''
-      dest: 'site-docs'
+      config: '_config.yml,_config_styleguide.yml'
+      dest: 'styleguide'
   ghpages:
     options:
-      config: '_config.yml'
       dest: '_gh_pages'

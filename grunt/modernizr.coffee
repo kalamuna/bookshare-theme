@@ -9,7 +9,10 @@ module.exports =
       mq: true
       cssclasses: true
 
-
+    tests: [
+      'flexbox'
+      'flexbox_legacy'
+    ]
     # Based on default settings on http://modernizr.com/download/
     extensibility:
       addtest: false
@@ -18,5 +21,5 @@ module.exports =
       testprops: false
       testallprops: false
       hasevents: false
-      prefixes: false
-      domprefixes: false
+      prefixes: true
+      domprefixes: true

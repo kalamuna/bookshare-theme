@@ -37,6 +37,45 @@ $brand-primary-b: #0a6f9b;
 $brand-success-b: #0a9b45;
 $brand-danger-b: #9b0a0a;
 
+
+//== Section coloring with variations
+// - tint = lightest
+// - baseline = base
+// - emphasis (em) = contrasty
+// - shade = darkest
+
+$brand-student-parent: #d71f26;
+$brand-student-parent-em: #be2025;
+$brand-student-parent-shade: #9a1b1f;
+$brand-student-parent-tint: #e5a1a1;
+
+
+$brand-adult: #51b959;
+$brand-adult-em: #35b456;
+$brand-adult-shade: #119b48;
+$brand-adult-tint: #a6d7b9;
+
+
+
+$brand-educator: #13b9d5;
+$brand-educator-em: #0995bf;
+$brand-educator-shade: #0d6f9b;
+$brand-educator-tint: #a2dbe5;
+
+
+$brand-volunteer: #be3d96;
+$brand-volunteer-em: #b23593;
+$brand-volunteer-shade: #972585;
+$brand-volunteer-tint: #daa2c9;
+
+
+$brand-about: #e5d8d3;
+$brand-about-em: #78716e;
+$brand-about-shade: #4c4847;
+$brand-about-tint: #e5d8d3;
+
+
+
 //== Scaffolding
 //
 // ## Settings for some of the most global styles.
@@ -481,7 +520,15 @@ $jumbotron-bg:                   $gray-lighter !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 
+//== Banner
+//
+//##
 
+$banner-padding:              15px !default;
+$banner-font-size:            150% !default;
+$banner-heading-font-size:    150% !default;
+$banner-margin-bottom: ($banner-padding * 2);
+$banner-border-radius: 0 !default;
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
@@ -501,6 +548,31 @@ $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) 
 $state-danger-text:              #a94442 !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+$state-student-parent-text: $brand-student-parent;
+$state-student-parent-bg: $brand-student-parent;
+$state-student-parent-border: $brand-student-parent;
+
+
+$state-adult-text:  $brand-adult;
+$state-adult-bg: $brand-adult-shade;
+$state-adult-border: $brand-adult;
+
+$state-educator-text: $brand-educator;
+$state-educator-bg: $brand-educator-shade;
+$state-educator-border: $brand-educator;
+
+
+$state-volunteer-text: $brand-volunteer;
+$state-volunteer-bg: $brand-volunteer-shade;
+$state-volunteer-border: $brand-volunteer;
+
+
+$state-about-text:  $brand-about;
+$state-about-bg: $brand-about-shade;
+$state-about-border: $brand-about;
+
 
 
 //== Tooltips
@@ -859,7 +931,7 @@ $site-footer-height: 60px;
 //##
 $primary-tout-default-color: #FFFFFF;
 $primary-tout-default-bg: $brand-primary-b;
-
+$primary-tout-max-width: 263px !default;
 
 //A11y Toolbar Variables
 $a11y-sprite-path: '../img/a11y-sprite.png';

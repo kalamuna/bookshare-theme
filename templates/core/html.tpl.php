@@ -51,20 +51,21 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print '<script src="/' . drupal_get_path('theme','bookshare') . '/dist/js/modernizr.bookshare.min.js' . '"></script>'; ?>
-  <?php print $scripts; ?>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <![endif]-->
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <!--[if lte IE 9]>
+      <div class="alert alert-warningbrowsehappy"><strong>You are using an outdated browser.</strong> Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</section>
   <![endif]-->
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <!-- Scripts at the bottom for faster page loads please -->
-  <?php //print $scripts; ?>
-  <!-- end scripts -->
+  <?php print $scripts; ?>
 </body>
 </html>

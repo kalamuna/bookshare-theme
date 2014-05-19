@@ -1,0 +1,6 @@
+@mixin banner-variation( $class, $background-color, $text-color: #fff){
+  #{$class}{
+    color: $text-color;
+    background-color: $background-color;
+  }
+}
